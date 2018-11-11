@@ -4,7 +4,7 @@ collections:
   - name: "blog"
     label: "Blogs"
     label_singular: "Blog"
-    folder: "_posts/blog"
+    folder: "blog/_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

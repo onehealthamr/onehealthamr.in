@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <section class="hero is-medium is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            {{ page.title}}
+          </h1>
+          <h2 class="subtitle">
+            {{ page.subtitle }}
+          </h2>
+        </div>
+      </div>
+    </section>
+
+  {{ content }}
+
+  <section class="section">
+    {%- if site.posts.size > 0 -%}
+    <h2 class="title is-3 has-text-centered">{{ page.list_title | default: "Latest Posts" }}</h2>
+    <ul class="columns is-centered">
+      {%- for post in site.posts -%}
+      <li class="column is-three-quarters">
+        <div class="card">
+          <header class="card-header">
+            <p>
+              <a class="card-header-title is-4" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <span class="">{{ post.date | date: date_format }}</span>
+              
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+            </div>
+          </div>
+          <footer class="card-footer">
+              <a href="{{ post.url | relative_url }}" class="card-footer-item">Read</a>
+            </footer>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    
+    {%- endif -%}
+  </section>
+
+</div>

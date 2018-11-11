@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: AMR Research Group
+title: Resist Microbes
 email: interact@amrresearch
 description: >- # this means to ignore newlines until "baseurl:"
   We are a group of researchers, microbiologists, pharmacologists, clinicians, molecular biologists, engineers, and programmers working on antimicrobial resistance in India

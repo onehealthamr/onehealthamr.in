@@ -23,7 +23,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 rss: feed
 
-permalink: /:title
+permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown

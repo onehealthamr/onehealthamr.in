@@ -27,6 +27,9 @@ permalink: /:categories/:title
 # setting future to true will allow us to use dates of future for events
 future: true
 
+# show excerpts
+show_excerpts: true
+
 # Build settings
 markdown: kramdown
 theme: minima

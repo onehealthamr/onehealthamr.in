@@ -24,7 +24,10 @@ layout: default
 
   </header>
 
-  <div class="section post-content e-content" itemprop="articleBody">
+  <div class="section content post-content e-content" itemprop="articleBody">
+    {%- if page.image -%}
+      <img src="{{ page.image | relative_url }}" alt="Image">
+    {%- endif -%}
     {{ content }}
   </div>
 

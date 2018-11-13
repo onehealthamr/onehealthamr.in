@@ -21,20 +21,61 @@ layout: default
 
   <section class="section">
     {%- if site.posts.size > 0 -%}
-    <h2 class="title is-3 has-text-centered">{{ page.list_title | default: "Latest Posts" }}</h2>
-    <ul class="columns is-centered">
+    <!-- <h2 class="title is-3 has-text-centered">{{ page.list_title | default: "Latest Posts" }}</h2> -->
+    <ul class="columns is-centered is-multiline">
       {%- for post in site.posts -%}
-      <li class="column is-three-quarters">
+      <li class="column is-one-third">
+
+        {%- if post.categories contains "events" -%}
+        <!-- event -->
         <div class="card">
-          <header class="card-header">
-            <p>
-              <a class="card-header-title is-4" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-            </p>
-          </header>
+          <div class="card-image">
+            <figure class="image">
+              <img src="{{ post.image | relative_url | default: '/assets/uploads/waaw-18-guest-lecture.jpeg' | relative_url }}" alt="">
+            </figure>
+          </div>
           <div class="card-content">
             <div class="content">
+              <a href="{{ post.url | relative_url }}">
+                <h4 class="is-title is-4">{{ post.title | escape }}</h4>
+              </a>
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+
+              {%- if post.eventtime -%}
+              <span class="">{{ post.eventtime }}</span>
+              {%- endif -%}
+            </div>
+          </div>
+          <footer class="card-footer">
+              <div class="card-footer-item">
+                  <a href="{{ post.url | relative_url }}" class="button is-link">More details</a>
+              </div>
+            </footer>
+        </div>
+        {%- endif -%}
+
+        {%- if post.categories contains "blog" -%}
+        <!-- blog -->
+        <div class="card">
+          <header class="card-header">
+            
+          </header>
+          {%- if post.image -%}
+          <div class="card-image">
+            <figure class="image">
+              <img src="{{ post.image | relative_url | default: '/assets/uploads/blog-placeholder.jpeg' | relative_url }}" alt="">
+            </figure>
+          </div>
+          {%- endif -%}
+          <div class="card-content">
+            <div class="content">
+              <a href="{{ post.url | relative_url }}">
+                <h4 class="is-title is-4">{{ post.title | escape }}</h4>
+              </a>
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               <span class="">{{ post.date | date: date_format }}</span>
               
@@ -44,9 +85,14 @@ layout: default
             </div>
           </div>
           <footer class="card-footer">
-              <a href="{{ post.url | relative_url }}" class="card-footer-item">Read</a>
-            </footer>
+            <div class="card-footer-item">
+                <a href="{{ post.url | relative_url }}" class="button">Read</a>
+            </div>
+          </footer>
         </div>
+        {%- endif -%}
+
+
       </li>
       {%- endfor -%}
     </ul>

@@ -9,4 +9,4 @@ venue: "Seminar Hall, 1st Floor, Dept of Pharmacy Practice, St. Philomena's Hosp
 image: "/assets/uploads/waaw-18-guest-lecture.jpeg"
 ---
 
-Dr Bala Subramanian, Co-Founder & Director of Bugworks Research India Pvt. Ltd. will be giving a Gues Lecture on "Responsible Antibiotic Use: A Plea form a Drug Hunter" on the occasion of World Antibiotic Awareness Week
+Dr Bala Subramanian, Co-Founder & Director of Bugworks Research India Pvt. Ltd. will be giving a Guest Lecture on "Responsible Antibiotic Use: A Plea form a Drug Hunter" on the occasion of World Antibiotic Awareness Week

@@ -3,32 +3,43 @@ layout: default
 ---
 <article class="container post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-      <section class="hero">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="post-title p-name title is-2" itemprop="name headline">{{ page.title | escape }}</h1>
-              <p class="post-meta">
-                  <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    {{ page.date | date: date_format }}
-                  </time>
-                  {%- if page.author -%}
-                    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-                  {%- endif -%}
-                </p>
-            </div>
-          </div>
-        </section>
-    
+  <header class="post-header has-text-centered">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="post-title p-name title is-2" itemprop="name headline">{{ page.title | escape }}</h1>
+          {%- if page.categories contains "blog" -%}
+          <p class="subtitle post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              {{ page.date | date: date_format }}
+            </time>
+            {%- if page.author -%}
+              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+            {%- endif -%}
+          </p>
+          {%- endif -%}
 
+          {%- if page.venue -%}
+            <p>Venue: {{ page.venue }}</p>
+          {%- endif -%}
+
+          {%- if page.eventtime -%}
+            <p>Date: {{ page.eventtime }}</p>
+          {%- endif -%}
+
+        </div>
+      </div>
+    </section>
   </header>
-
-  <div class="section content post-content e-content" itemprop="articleBody">
-    {%- if page.image -%}
-      <img src="{{ page.image | relative_url }}" alt="Image">
-    {%- endif -%}
-    {{ content }}
+  
+  <div class="content post-content e-content columns is-centered is-mobile" itemprop="articleBody">
+    <div class="column is-11">
+      {%- if page.image -%}
+        <img src="{{ page.image | relative_url }}" alt="Image">
+      {%- endif -%}
+      {{ content }}
+    </div>
   </div>
 
   {%- if site.disqus.shortname -%}

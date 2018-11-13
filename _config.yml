@@ -24,6 +24,9 @@ rss: feed
 
 permalink: /:categories/:title
 
+# setting future to true will allow us to use dates of future for events
+future: true
+
 # Build settings
 markdown: kramdown
 theme: minima

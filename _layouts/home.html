@@ -29,10 +29,10 @@ layout: default
         {%- if post.categories contains "events" -%}
         <!-- event -->
         <div class="card">
-          {%- if post.images -%}
+          {%- if post.image -%}
           <div class="card-image">
             <figure class="image">
-              <img src="{{ post.images.first | relative_url }}" alt="">
+              <img src="{{ post.image | relative_url }}" alt="">
             </figure>
           </div>
           {%- endif -%}
@@ -70,10 +70,10 @@ layout: default
           <header class="card-header">
             
           </header>
-          {%- if post.images -%}
+          {%- if post.image -%}
           <div class="card-image">
             <figure class="image">
-              <img src="{{ post.images.first | relative_url | default: '/assets/uploads/blog-placeholder.jpeg' | relative_url }}" alt="">
+              <img src="{{ post.image | relative_url | default: '/assets/uploads/blog-placeholder.jpeg' | relative_url }}" alt="">
             </figure>
           </div>
           {%- endif -%}

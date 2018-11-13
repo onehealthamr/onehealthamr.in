@@ -4,8 +4,7 @@ tags:
   - lecture
 eventtime: "12-Nov-2018 3:15 pm onwards"
 venue: "Seminar Hall, 1st Floor, Dept of Pharmacy Practice, St. Philomena's Hospital, Bangalore"
-images:
-  - "/assets/uploads/waaw-18-guest-lecture.jpeg"
+image: "/assets/uploads/waaw-18-guest-lecture.jpeg"
 date: 2018-11-12 05:00
 ---
 

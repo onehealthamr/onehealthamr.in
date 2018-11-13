@@ -23,6 +23,11 @@ github_username: onehealthamr
 twitter_username: OneHealthAMR
 rss: feed
 
+author: OneHealthAMR
+twitter:
+  username: OneHealthAMR
+  card: summary
+
 permalink: /:categories/:title
 
 # setting future to true will allow us to use dates of future for events

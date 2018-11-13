@@ -2,7 +2,8 @@
 title: "Responsible Antibiotic Use: A Plea From A Drug Hunter"
 tags:
   - lecture
-images:
+image: "/assets/uploads/waaw-18-guest-lecture-1.jpeg"
+gallery:
   - "/assets/uploads/waaw-18-guest-lecture-1.jpeg"
   - "/assets/uploads/waaw-18-guest-lecture-0.jpeg"
   - "/assets/uploads/waaw-18-guest-lecture-2.jpeg"

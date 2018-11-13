@@ -4,8 +4,7 @@ tags:
   - lecture
 eventtime: "13-Nov-2018 3:15 pm onwards"
 venue: "Examination Hall, 1st Floor, Visveswarapura Institute of Pharmaceutical Sciences, BSK 2nd Stage, Bangalore"
-images:
-  - "/assets/uploads/waaw-18-guest-lecture-dr-bala-viis.jpeg"
+image: "/assets/uploads/waaw-18-guest-lecture-dr-bala-viis.jpeg"
 date: 2018-11-12 06:00
 ---
 

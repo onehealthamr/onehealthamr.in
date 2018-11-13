@@ -4,8 +4,7 @@ tags:
   - lecture
 eventtime: "14-Nov-2018 4 PM - 5 PM"
 venue: "Examination Hall, 1st Floor, Visveswarapura Institute of Pharmaceutical Sciences, BSK 2nd Stage, Bangalore"
-images:
-  - "/assets/uploads/waaw-18-guest-lecture-dr-sarin.jpeg"
+image: "/assets/uploads/waaw-18-guest-lecture-dr-sarin.jpeg"
 date: 2018-11-12 07:00
 ---
 

@@ -35,11 +35,10 @@ layout: default
   
   <div class="content post-content e-content columns is-centered is-mobile is-multiline" itemprop="articleBody">
     <div class="column is-8-tablet article-image has-background is-11-mobile">
-      {%- if page.showimageinpost and page.images -%}
-      {%- if page.images.size > 1 -%}
+      {%- if page.gallery -%}
         <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
           <div class='carousel-container'>
-            {%- for image in page.images -%}
+            {%- for image in page.gallery -%}
             <div class='carousel-item has-background is-active'>
               <img class="image is-background" src="{{ image | relative_url }}" alt=""/>
             </div>
@@ -55,8 +54,9 @@ layout: default
           </div>
         </div>
       {%- else -%}
+      {%- if page.showimageinpost and page.image -%}
         <div class="image">
-          <img src="{{ page.images.first | relative_url }}" alt="Image">
+          <img src="{{ page.image | relative_url }}" alt="Image">
         </div>
       {%- endif -%}
       {%- endif -%}

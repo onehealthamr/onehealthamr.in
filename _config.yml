@@ -26,7 +26,7 @@ rss: feed
 author: OneHealthAMR
 twitter:
   username: OneHealthAMR
-  card: summary
+  card: summary_large_image
 
 permalink: /:categories/:title
 

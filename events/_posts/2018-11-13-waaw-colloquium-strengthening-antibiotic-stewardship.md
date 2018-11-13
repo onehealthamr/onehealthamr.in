@@ -14,5 +14,5 @@ We are organizing this colloquium as a launchpad of our research activities.
 ### Schedule
 
 <div class="elastic-container">
-    <iframe src="https://drive.google.com/file/d/1FCtI-UagAHHgadJo0mkEUgxtO5asSO0p/preview" width="1440" height="840"></iframe>
+    <iframe src="https://drive.google.com/file/d/0B0ot3d36B9StWVpqQ3c1My1iQkZrVU5id2N2THhrM3picHJz/preview" width="1440" height="840"></iframe>
 </div>

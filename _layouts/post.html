@@ -35,7 +35,7 @@ layout: default
   
   <div class="content post-content e-content columns is-centered is-mobile is-multiline" itemprop="articleBody">
     <div class="column is-11">
-      {%- if page.image -%}
+      {%- if page.showimageinpost and page.image -%}
         <img src="{{ page.image | relative_url }}" alt="Image">
       {%- endif -%}
     </div>

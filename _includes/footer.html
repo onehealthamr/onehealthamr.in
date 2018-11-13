@@ -33,3 +33,7 @@
 </footer>
 
 <script src="{{ "/assets/main.js" | relative_url }}"></script>
+
+{%- if page.images.size > 1 -%}
+<script src="{{ "/assets/js/vendor/bulma-carousel.min.js" | relative_url }}"></script>
+{%- endif -%}

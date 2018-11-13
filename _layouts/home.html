@@ -44,10 +44,14 @@ layout: default
               {%- if site.show_excerpts -%}
                 {{ post.excerpt }}
               {%- endif -%}
-
+              {% comment %}
               {%- if post.eventtime -%}
-              <span class="">{{ post.eventtime }}</span>
+              <p class="">{{ post.eventtime }}</p>
               {%- endif -%}
+              {%- if post.venue -%}
+              <p class="">{{ post.venue }}</p>
+              {%- endif -%}
+              {% endcomment %}
             </div>
           </div>
           <footer class="card-footer">
